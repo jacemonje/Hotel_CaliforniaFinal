@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body background="backg.jpg">
+  <head>
+    <title>Hotel California | Check in</title>
+    <!-- You can include a downloaded version of Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">  
+  </head>
+  <body>
+
+
+<div id = "wrapper">
+
+    <div id = "navi">
+
+       <font face="modern"><h1> <b>Welcome to the Hotel California</b></h1>   
+      
+     
+       
+      <a href = "index" STYLE="text-decoration: none">Home</a> |
+      <b><a href = "forms" STYLE="text-decoration: none">Check in</a></b> |
+      <a href = "rooms" STYLE="text-decoration: none">Rooms Available</a> |
+      <a href = "about" STYLE="text-decoration: none">About us</a> 
+
+      
+      
+      <br><br> 
+
+      <h3> You can check out any time you like, but you can never leave!</h3>
+
+        <form method = "POST" action="/confirm">
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname"><br>
+        Date: <input type="date" name="date"><br>
+        Room:
+        <select name= "type">
+        <option value="1408">1408</option>
+        </select> <br>       
+        I will avail of parking and my plate number is: <input type="text" name="car"><br><i>(leave blank if not applicable)     </i><br><br>
+
+        <input type="submit" value="Check in!">
+
+        </form>
+        <br><br> 
+        
+
+
+
+
+
+    </div>
+    
+     
+
+      
+
+     
+
+    
+
+     
+    </div>  
+    
+
+
+  
+  </body>
+</html>

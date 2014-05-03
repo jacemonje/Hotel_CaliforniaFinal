@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body background="backg.jpg">
+  <head>
+    <title>Hotel California | Confirm</title>
+    
+        <link rel="stylesheet" type="text/css" href="mystyle.css">  
+  </head>
+  <body>
+
+
+<div id = "wrapper">
+
+    <div id = "navi">
+
+       <font face="modern"><h1> <b>Welcome to the Hotel California</b></h1>   
+      
+     
+       
+      <a href = "index" STYLE="text-decoration: none">Home</a> |
+      <a href = "forms" STYLE="text-decoration: none">Check in</a> |
+      <b><a href = "rooms" STYLE="text-decoration: none">Rooms Available</a></b> |
+      <a href = "about" STYLE="text-decoration: none">About us</a> 
+     
+      <br><br>
+
+      <h2>Confirm!</h2> 
+      Hi <%= @firstname %> <%= @lastname %><br>
+      You checked in on <%= @date %><br>
+      You also checked in room <%= @roomtype %><br>
+      
+      <% if @car.to_s == "" %>
+      You did not bring a car.
+      
+      <% else %>
+      Your car with plate number <%= @car %> has a free parking slot.
+      <% end %>
+      <h1>YOU WILL BE HERE FOREVER AND EVER</h1>
+        
+
+      
+    </div>
+     
+  </div>  
+    
+
+
+  
+  </body>
+</html>
